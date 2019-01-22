@@ -25,12 +25,12 @@ function slide(){
 }
 
 $(function(){
-    $(".tc").css({"margin-left":"-1000px","opacity":"0"});
+    $(".today").css({"margin-left":"-1000px","opacity":"0"});
     $(".bean").css({"margin-right":"-2000px","opacity":"0"});
 
     $(window).on("scroll",function(){
-        if($(window).scrollTop()>100){
-            $(".tc").animate({marginLeft:"0",opacity:"1"},500,"linear",function(){
+        if($(window).scrollTop()>80){
+            $(".today").animate({marginLeft:"0",opacity:"1"},600,"linear",function(){
               
             });
             $(".bean").animate({marginRight:"0",opacity:"1"},700,"linear",function(){
@@ -41,11 +41,11 @@ $(function(){
 });
 
 $(function(){
-    $(".inner_2").css({"opacity":"0","margin-right":"-2000px"});
+    $(".inner").css({"opacity":"0","margin-right":"-2000px"});
 
     $(window).on("scroll",function(){
-        if($(window).scrollTop()>1500){
-            $(".inner_2").animate({marginRight:"0",opacity:"1"},1200,"linear")
+        if($(window).scrollTop()>1600){
+            $(".inner").animate({marginRight:"0",opacity:"1"},600,"linear")
             
         }
     });

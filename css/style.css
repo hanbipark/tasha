@@ -192,7 +192,7 @@ header{
 #content2{
     width: 100%;
     height: 0;
-    padding-top: calc(300/1200*100%);
+    padding-top: calc(400/1200*100%);
     background: url(image/bg2.png) no-repeat;
     background-size: cover;
     display: flex;
@@ -208,7 +208,7 @@ header{
     position: relative;
     top: -430px;
 }
-.tm>img{
+.tm img{
     width: 100%;
     height: auto;
 }
@@ -220,6 +220,9 @@ header{
 .tm2{
     opacity: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tm:hover .tm1{
     opacity: 0;
@@ -229,6 +232,26 @@ header{
     transform: rotateY(180deg);
     transition: all 0.8s;
      opacity: 1;
+}
+.button_2{
+    width: 100px;
+    height: auto;
+    color:  #721124;
+    border: 3px solid #721124;
+    position: absolute;
+    bottom: 15%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2% 5%;
+}
+.tm:hover .tm2>.button_2{
+     transform: rotateY(180deg);
+    transition: all 0.8s;
+}
+.button_2:hover{
+    background-color:  #721124;
+    color: white;
+     transition: all 0.8s;
 }
 #content3{
     width: 100%;
