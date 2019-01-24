@@ -191,31 +191,36 @@ header{
 }
 #content2{
     width: 100%;
-    height: 0;
-    padding-top: calc(400/1200*100%);
+    height: 0 !important;
+    padding-bottom: calc(400/1200*100%);
     background: url(image/bg2.png) no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
 
 }
 .tm{
     width:300px;
-    height: 300px;
+    height: auto;
     cursor: pointer;
-    margin: auto;
+    margin:  auto;
     position: relative;
-    top: -430px;
+   padding-top: 5%;
+}
+.tm1, .tm1_2{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 100%;
 }
 .tm img{
     width: 100%;
     height: auto;
+
 }
-.tm1, .tm2{
-    position: absolute;
-    left: 0;
-    top: 0;
+.tm1{
+/*    padding-top: 5%;*/
 }
 .tm2{
     opacity: 0;
